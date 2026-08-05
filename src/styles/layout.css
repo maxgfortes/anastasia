@@ -336,7 +336,6 @@
     z-index: 2;
 }
 
-
 .section.count::before {
     content: '';
     position: absolute;
@@ -347,8 +346,6 @@
     background: linear-gradient(to top, transparent, #050505);
     pointer-events: none;
 }
-
-
 
 .section.count::after {
     content: '';
@@ -371,7 +368,6 @@
     background: linear-gradient(to bottom, transparent, #050505);
     pointer-events: none;
 }
-
 
 .section.welcome {
     background: #050505;
@@ -708,7 +704,6 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,.1);
 }
-
 
 .swipe-area {
   display: flex;
