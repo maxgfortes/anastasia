@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no,  viewport-fit=cover">
+  <title>Happy Birthday!</title>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#050505">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" href="/public/img/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/public/img/icon-app.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="../src/styles/layout.css">
+  <link rel="stylesheet" href="../src/styles/layout-desktop.css">
+  <link rel="stylesheet" href="../src/styles/root.css">
+
+  <meta property="og:site_name" content="Happy Birthday Anastasia!">
+  <meta property="og:title" content="Happy Birthday Anastasia!">
+  <meta property="og:description" content="I wish you have one of the best birthdays ever!">
+  <meta property="og:url" content="https://happybirthdayanastasia.pw">
+  <meta property="og:image" content="https://happybirthdayanastasia.pw/public/img/share-icon.png">
+  <meta property="og:image:alt" content="Birthday celebration image">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Happy Birthday Anastasia!">
+  <meta name="twitter:description" content="I wish you have one of the best birthdays ever!">
+  <meta name="twitter:image" content="https://happybirthdayanastasia.pw/public/img/share-icon.png">
+</head>
+<body>
+
+    <div class="intro-screen" id="introScreen">
+        <div class="intro-content">
+            <div class="intro-title" data-i18n="intro-title">Anastasia</div>
+            <div class="intro-sub" data-i18n="intro-sub">A little something made just for you</div>
+            <button class="btn intro-btn" id="introBtn">Start</button>
+        </div>
+    </div>
+
+    <audio id="bgMusic" src="/public/audio/song.mp3" loop preload="auto"></audio>
+
+    <div class="overlay" id="overlay">
+        <div class="hearts-container" id="heartsContainer"></div>
+        <div class="ask-area" id="askArea">
+            <div class="overlay-text">
+                <div class="overlay-title" data-i18n="overlay-title">Anastasia</div>
+                <div class="overlay-sub" data-i18n="overlay-sub">Do you want to be my girlfriend?</div>
+            </div>
+            <div class="buttons-area">
+                <button class="btn yes" id="yesBtn" data-i18n="yes-btn">Yess i want!</button>
+                <button class="btn no" id="noBtn" data-i18n="no-btn">Noo</button>
+            </div>
+        </div>
+        <div class="response-area" id="responseArea">
+            <div class="response-text" data-i18n="response-text">iupiii! i love u so so so so much</div>
+            <button class="btn back" id="backBtn" data-i18n="back-btn">close this screen</button>
+        </div>
+    </div>
+
+    <div class="section welcome">
+        <div class="welcome-main">
+            <div class="welcome-text reveal" data-i18n="welcome-text">Happy <br>Birthday, Anastasia!</div>
+            <div class="welcome-sub reveal" data-i18n="welcome-sub">Wishing you a fantastic day filled with joy and laughter!</div>
+        </div>
+    </div>
+
+    <div class="section aboutyou">
+        <div class="about-you-header">
+            <div class="aboutyou-header">
+                <div class="about-title" data-i18n="aboutyou-title">Getting to Know You</div>
+                <div class="aboutyou-sub" data-i18n="aboutyou-sub">A few little things I love about you</div>
+            </div>
+        </div>
+        <div class="swipe-area">
+            <div class="card">
+                <div class="card-bg">
+                    <img src="/public/img/ana4.png" alt="Anastasia's smile">
+                </div>
+                <div class="card-body">
+                    <div class="card-header">
+                        <div class="card-title" data-i18n="aboutyou-card1-title">Your smile</div>
+                        <div class="card-icon"></div>
+                    </div>
+                    <div class="card-text" data-i18n="aboutyou-card1-text">Honestly my favorite thing to look at, it fixes any bad day instantly.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-bg">
+                    <img src="/public/img/ana2.png" alt="Anastasia talking">
+                </div>
+                <div class="card-body">
+                    <div class="card-header">
+                        <div class="card-title" data-i18n="aboutyou-card2-title">The way you talk</div>
+                        <div class="card-icon"></div>
+                    </div>
+                    <div class="card-text" data-i18n="aboutyou-card2-text">I could listen to you for hours and never get bored.</div>
+                </div>
+            </div>
+            <div class="card">
+                 <div class="card-bg">
+                    <img src="/public/img/ana3.png" alt="Anastasia's hugs">
+                </div>
+                <div class="card-body">
+                    <div class="card-header">
+                        <div class="card-title" data-i18n="aboutyou-card3-title">Your hugs</div>
+                        <div class="card-icon"></div>
+                    </div>
+                    <div class="card-text" data-i18n="aboutyou-card3-text">They feel like home, even through a screen.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section timeline">
+        <div class="timeline-blur"></div>
+        <div class="timeline-area">
+            <div class="timeline-labels">
+                <div class="timeline-item reveal">
+                    <div class="timeline-text" data-i18n="timeline-1">When we meet for the first time</div>
+                    <div class="timeline-dot">May<br>2026</div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-text" data-i18n="timeline-2">Our first messages</div>
+                    <div class="timeline-dot">May<br>2026</div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-text" data-i18n="timeline-3">Our first call</div>
+                    <div class="timeline-dot">June<br>2026</div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-text" data-i18n="timeline-4">the firt time we played, watched movies and do thigs togheter </div>
+                    <div class="timeline-dot">June<br>2026</div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-text" data-i18n="timeline-5">Our intimacy</div>
+                    <div class="timeline-dot">July<br>2026</div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-text" data-i18n="timeline-6">Present days</div>
+                    <div class="timeline-dot">August<br>2026</div>
+                </div>
+            </div>
+            <div class="timeline-line"></div>
+        </div>
+    </div>
+
+    <div class="section count">
+        <div class="count-container">
+            <div class="count-title" data-i18n="count-title">How long I've loved you</div>
+            <div class="counter" id="counter">72:28:34:29</div>
+        </div>
+        <div class="count-overlay"></div>
+    </div>
+
+    <div class="section why">
+        <div class="why-header reveal">
+            <div class="why-title" data-i18n="why-title">Why You're Special?</div>
+            <div class="why-sub" data-i18n="why-sub">Because you make my life better every day!</div>
+        </div>
+        <div class="why-grid">
+            <div class="why-block reveal">
+                <div class="img-area">
+                    <img class="img-area-img" src="/public/img/we.png" alt="We">
+                </div>
+                <div class="why-text-area">
+                    <div class="why-text-title" data-i18n="why-block1-title">You make everything better</div>
+                    <div class="why-text-body" data-i18n="why-block1-text">Being with you turns an ordinary day into one I actually look forward to.</div>
+                </div>
+            </div>
+            <div class="why-block reveal">
+                <div class="why-text-area right">
+                    <div class="why-text-title" data-i18n="why-block2-title">My favorite teammate</div>
+                    <div class="why-text-body" data-i18n="why-block2-text">Even in a silly game like Minecraft, I just love doing anything together with you.</div>
+                </div>
+                <div class="img-area right">
+                    <img class="img-area-img right" src="/public/img/mc.png" alt="we playing Minecraft">
+                </div>
+            </div>
+            <div class="why-block reveal">
+                <div class="img-area">
+                    <img class="img-area-img" src="/public/img/sleep.png" alt="we sleeping together">
+                </div>
+                <div class="why-text-area">
+                    <div class="why-text-title" data-i18n="why-block3-title">Falling asleep with you</div>
+                    <div class="why-text-body" data-i18n="why-block3-text">Even through a screen, knowing you're there before I sleep makes me feel so much closer to you.</div>
+                </div>
+            </div>
+            <div class="why-block reveal">
+                <div class="why-text-area right">
+                    <div class="why-text-title" data-i18n="why-block4-title">That moment</div>
+                    <div class="why-text-body" data-i18n="why-block4-text">I still think about our first kiss, it's one of my favorite memories with you.</div>
+                </div>
+                <div class="img-area right">
+                    <img class="img-area-img right" src="/public/img/kiss.png" alt="our kiss">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section finish">
+        <div class="finish-header reveal">
+            <div class="finish-title" data-i18n="finish-title">Thats my why</div>
+            <div class="finish-sub" data-i18n="finish-sub">Ik we just know for a 3 mouths but for the first time in my life u make me feel isnt look for some other person Ik we just know for a 3 mouths but for the first time in my life u make me feel isnt look for some other person Ik we just know for a 3 mouths but for the first time in my life u make me feel isnt look for some other person</div>
+        </div>
+        <div class="finish-bottom reveal">
+            <div class="finish-text" data-i18n="finish-text">btww, before u go, can i ask you something?</div>
+            <div class="finish-btn-area">
+                <button class="btn open-overlay" id="openOverlay" data-i18n="open-overlay-btn">Yes, let's see the question</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section translates">
+        <button class="lbtn" id="lRussian">
+            <img src="/public/img/ruflag.png" alt="Russian">
+        </button>
+        <button class="lbtn active" id="lEnglish">
+            <img src="/public/img/usflag.png" alt="English">
+        </button>
+    </div>
+
+<script src="/src/js/main.js"></script>
+</body>
+</html>

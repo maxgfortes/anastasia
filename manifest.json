@@ -1,0 +1,22 @@
+{
+  "name": "Happy Birthday Anastasia!",
+  "short_name": "Anastasia",
+  "description": "I wish you have one of the best birthdays ever!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/public/img/icon-app.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/img/icon-app.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
